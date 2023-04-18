@@ -1,42 +1,54 @@
-var VHypotenuse = "Kumar";
-const CName = "VHypotenuse";
-// console.log(name);
-console.log("CName.indexof", CName.indexOf("u"));
-console.log("CName.length", CName.length);
-console.log("CName.replace", CName.replace("use","esu"));
-console.log("CName.lowerCase", CName.toLowerCase());
-
-
-let num_1 = 98;
-
-switch(true){
-    case (num_1 % 3 === 0 && num_1 % 5 === 0):
-    console.log("Foo & Bar");
-    break;
-
-    case (num_1 % 3 === 0):
-        console.log("Foo");
-        break;
-
-    case (num_1 % 5 === 0):
-        console.log("Bar");
-        break;
-    default: console.log("Neither Foo nor Bar");
+for(let i=1; i<11; i++){
+    console.log("value",i);
 }
 
-// let num=15;
-// if(num % 3 === 0 && num % 5 === 0){
-//     console.log("Foo & Bar");
-// }else if (num % 3 === 0){
-//     console.log("Foo");
-// }else if (num % 5 === 0){
-//     console.log("Bar");
-// }else{
-//     console.log("Neither Foo nor Bar");
-// }
+let number_1 = 10;
+let number_2 = 20;
+let numbers = number_1 + number_2;
+console.log("num",numbers);
+while(numbers <= 50){
+    number_1 ++;
+    number_2 += 2;
+    numbers = number_1 + number_2;
+    console.log("num",numbers);
+}
 
-let num = 10;
-let num_2 = 30;
-is_number= false;
-result = is_number ? num+num_2 : num-num_2
-console.log("ass$sub",result);
+const person =
+{
+    label: "Box",
+    dimension: "22x33x22"
+}
+
+// const box = {
+//     label: "Box",
+//     dimension: "22x33x22"
+//   };
+
+//   for (let key in box) {
+//     console.log("key:" + key + "  value:" + box[key]);
+//   }
+
+const box = {
+    label: "Box",
+    dimension: "22x33x22"
+  };
+//   let key = "";
+  for (let key in box) {
+    
+    console.log("key:" + key +" value:"+box[key])
+    // console.log(key + ": " + box[key]);
+  }
+  
+  const number = [10,20,30];
+
+  for(let key in number){
+    console.log("number", "index :"+key+" value:"+number[key])
+  }
+
+
+const num = [10,20,30,40,50];
+
+for(let [index, value] of num.entries()){
+    console.log("index: "+(index+" value:"+value));
+}
+
