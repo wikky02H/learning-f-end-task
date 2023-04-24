@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap" rel="stylesheet">
-    <style>
-        
-      </style>
-      <link rel="stylesheet" href="./index.css">
-</head>
-<body>
-<!-- <ui>
-  <li class="color">Apple</li>
-  <li class="color">Orange</li>
-  <li class="color">Mango</li>
-  <li class="color">Grapes</li>
-  <li class="color">Banana</li>
-</ui> -->
-<!-- <ol>
-  <li class="dis">madurai</li>
-  <li class="dis">virudunagar</li>
-  <li class="dis">sivakasi</li>
-  <li class="dis">alapuzha</li>
-  <li class="dis">coimbatore</li>
-</ol> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <style></style>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <form>
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br />
 
-<!-- <div class="container">
-<img src="https://via.placeholder.com/150/0000FF/808080 ?Text=PAKAINFO.com" alt="flower" />
-</div> -->
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br />
 
-<p class="textClass">Hello World!</p>
-</body>
+      <label for="gender">Gender:</label><br />
+      <select id="gender" name="gender" required>
+        <option value="">--Please select--</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option></select
+      ><br />
+
+      <label for="dob">Date of Birth:</label><br />
+      <input type="date" id="dob" name="dob" required /><br />
+
+      <label for="subscribe">Subscribe to news:</label>
+      <input type="checkbox" id="subscribe" name="subscribe" /><br />
+
+      <label>Preferred day:</label><br />
+      <input type="radio" id="monday" name="preferred_day" value="monday" />
+      <label for="monday">Monday</label><br />
+      <input type="radio" id="tuesday" name="preferred_day" value="tuesday" />
+      <label for="tuesday">Tuesday</label><br />
+      <input
+        type="radio"
+        id="wednesday"
+        name="preferred_day"
+        value="wednesday"
+      />
+      <label for="wednesday">Wednesday</label><br />
+      <input type="radio" id="thursday" name="preferred_day" value="thursday" />
+      <label for="thursday">Thursday</label><br />
+      <input type="radio" id="friday" name="preferred_day" value="friday" />
+      <label for="friday">Friday</label><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
 </html>
-
